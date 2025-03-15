@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Chatapp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--
+            定义主题 "Theme.Chatapp"，继承自 Material 组件库的 "DayNight" 主题。
+            - Theme.MaterialComponents.DayNight：支持深色（夜间）模式的 Material Design 主题。
+            - NoActionBar：去除默认的 ActionBar，适用于自定义 Toolbar。
+        -->
+
+        <!-- 定义应用的主要颜色，颜色值从 res/values/colors.xml 获取 -->
+        <item name="colorPrimary">@color/primary</item>
+
+        <!--
+            设置状态栏的颜色，API 21（Lollipop）及以上版本才支持此属性。
+            tools:targetApi="l" 作用：
+            - 仅在 Android 5.0 (API 21) 及以上设备生效，防止低版本设备出现兼容性问题。
+        -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+
+        <!-- 预留的颜色设置（当前被注释掉），可以切换为自定义的亮色主题颜色 -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+</resources>

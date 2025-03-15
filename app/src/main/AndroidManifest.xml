@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Chatapp"
+        tools:targetApi="31">
+
+        <!-- 注册 SignUpActivity（注册页面） -->
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <!-- adjustResize 使软键盘弹出时调整界面，以防遮挡输入框 -->
+
+        <!-- 注册 SignInActivity（登录页面） -->
+        <activity
+            android:name=".activities.SignInActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true">  <!-- Android 12 及以上必须指定 exported 属性 -->
+
+            <!-- 设置 SignInActivity 为应用的启动页面 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />  <!-- 设为主入口 -->
+                <category android:name="android.intent.category.LAUNCHER" />  <!-- 设为桌面启动图标 -->
+            </intent-filter>
+        </activity>
+
+        <!-- 注册 MainActivity（应用主界面） -->
+        <activity
+            android:name=".MainActivity" />
+
+    </application>
+
+</manifest>

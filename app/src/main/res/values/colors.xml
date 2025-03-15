@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主要主题颜色 -->
+    <color name="primary">#1C2E46</color> <!-- 主要颜色（深蓝色，适用于 AppBar、按钮等） -->
+    <color name="primary_dark">#142232</color> <!-- 深色主题变体，适用于状态栏或背景 -->
+
+    <!-- 文字颜色 -->
+    <color name="primary_text">#212121</color> <!-- 主要文本颜色（深灰色，适用于正文） -->
+    <color name="secondary_text">#757575</color> <!-- 次要文本颜色（浅灰色，适用于辅助文本） -->
+
+    <!-- 基础颜色 -->
+    <color name="white">#FFFFFF</color> <!-- 纯白色（背景或按钮文字） -->
+
+    <!-- 输入框 & 图标背景 -->
+    <color name="input_background">#ECECEC</color> <!-- 输入框背景（浅灰色） -->
+    <color name="icon_background">#20FFFFFF</color> <!-- 图标背景（半透明白色） -->
+
+    <!-- 错误提示颜色 -->
+    <color name="error">#B00020</color> <!-- 错误提示（红色，适用于错误消息） -->
+
+    <!-- 聊天消息背景 -->
+    <color name="received_message_background">#090D16</color> <!-- 收到的消息背景（深蓝色） -->
+</resources>
