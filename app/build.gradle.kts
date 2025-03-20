@@ -51,4 +51,11 @@ dependencies {
 
     //用于旋转或圆角图像
     implementation("com.makeramen:roundedimageview:2.3.0") // 提供圆角、边框等图片处理功能
+
+    // OkHttp依赖 - 添加具体版本号
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    
+    // Gson依赖
+    implementation("com.google.code.gson:gson:2.10.1")
 }
